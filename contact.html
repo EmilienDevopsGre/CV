@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href=style.css>
+</head>
+
+<body class=contact>
+    <h1>
+        Contact
+    </h1>
+
+    <p>Vous pouvez me contacter du lundi au vendredi à partir de 17h par téléphone au <br>
+        <strong><a href="tel:+33711223344">0711223344</a></strong>
+    </p>
+    <p>Vous pouvez également m'écrire à tout moment par mail : <a href="mailto:emilien.mace@gmail.com">emilien.mace@gmail.com</a></p>
+
+    <form action="https://httpbin.org/post" method="post">
+        <p> Je suis :</p>
+        <div class="radio">
+            <label for="entreprise">Une entreprise</label><input type="radio" name="type" value="entreprise"
+                id="entreprise" />
+            <label for="autre">Autre</label><input type="radio" name="type" value="autre" id="autre" /> <input type="text" name="autre_choix" placeholder="si autre" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+        <div>
+            <label for="selectionraison">Quelle est la raison de votre message:</label>
+
+            <select name="choixraison" id="selectionraison">
+                <option value="">--Please choose an option--</option>
+                <option value="propositiondejob">proposition de job</option>
+                <option value="partenariat">partenariat</option>
+                <option value="réseautage">réseautage</option>
+                <option value="autre">autre</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="surname" name="user_surname" required minlength="4">
+        </div>
+        <div>
+            <label for="name">Prénom :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="mail">e-mail :</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message" required minlength="4" placeholder="votre message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envoyer le message</button>
+        </div>
+    </form>
+    <p><a href="index.html">retour au CV</a>
+</p>
+</body>
